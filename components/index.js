@@ -32,16 +32,42 @@ function MyAside() {
 
 function MyForm() {
     return (
-        <form >
-            <input className="inp-form" autoComplete="off" placeholder="First Name" />
-            <input className="inp-form" autoComplete="off" placeholder="Last Name" />
-            <input className="inp-form"  autoComplete="off" placeholder="Email Address" />
-            <input className="inp-form"  autoComplete="off" placeholder="Password" />
+        <form id="myForm">
 
-            <button className="inp-form"  type="submit">CLAIM YOUR FREE TRIAL</button>
+            <div className="inp-form">
+
+                <input type="text" id="firstName" autoComplete="off" placeholder="First Name" required/>
+                <span className="spanError"></span>
+
+            </div>
+
+            <div  className="inp-form">
+
+                <input type="text" id="lastName" autoComplete="off" placeholder="Last Name" required/>
+                <span className="spanError"></span>
+
+            </div>
+
+            <div className="inp-form">
+
+                <input type="email" id="email"  autoComplete="off" placeholder="Email Address" required/>
+                <span className="spanError"></span>
+
+            </div>
+
+            <div className="inp-form">
+
+                <input type="password" id="password"  autoComplete="off" placeholder="Password" required/>
+                <span className="spanError"></span>
+
+            </div>
+
+            <button className="inp-form" type="submit">CLAIM YOUR FREE TRIAL</button>
 
             <footer>
-                <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+                <p>
+                    By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
+                </p>
             </footer>
         </form>
     )

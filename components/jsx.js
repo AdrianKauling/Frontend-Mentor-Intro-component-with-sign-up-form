@@ -17,23 +17,49 @@ function MyAside() {
 }
 
 function MyForm() {
-  return /*#__PURE__*/React.createElement("form", null, /*#__PURE__*/React.createElement("input", {
-    className: "inp-form",
+  return /*#__PURE__*/React.createElement("form", {
+    id: "myForm"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "inp-form"
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "firstName",
     autoComplete: "off",
-    placeholder: "First Name"
-  }), /*#__PURE__*/React.createElement("input", {
-    className: "inp-form",
+    placeholder: "First Name",
+    required: true
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "spanError"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "inp-form"
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "lastName",
     autoComplete: "off",
-    placeholder: "Last Name"
-  }), /*#__PURE__*/React.createElement("input", {
-    className: "inp-form",
+    placeholder: "Last Name",
+    required: true
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "spanError"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "inp-form"
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "email",
+    id: "email",
     autoComplete: "off",
-    placeholder: "Email Address"
-  }), /*#__PURE__*/React.createElement("input", {
-    className: "inp-form",
+    placeholder: "Email Address",
+    required: true
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "spanError"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "inp-form"
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "password",
+    id: "password",
     autoComplete: "off",
-    placeholder: "Password"
-  }), /*#__PURE__*/React.createElement("button", {
+    placeholder: "Password",
+    required: true
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "spanError"
+  })), /*#__PURE__*/React.createElement("button", {
     className: "inp-form",
     type: "submit"
   }, "CLAIM YOUR FREE TRIAL"), /*#__PURE__*/React.createElement("footer", null, /*#__PURE__*/React.createElement("p", null, "By clicking the button, you are agreeing to our ", /*#__PURE__*/React.createElement("a", {

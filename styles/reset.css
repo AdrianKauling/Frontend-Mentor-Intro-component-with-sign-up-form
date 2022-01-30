@@ -42,6 +42,11 @@ aside form{
     
 }
 
+form input{
+    border:none;
+    outline:none;
+}
+
 form button{
     background-color:#36BF7F;
 
