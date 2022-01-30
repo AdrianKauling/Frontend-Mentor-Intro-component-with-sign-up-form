@@ -55,7 +55,9 @@ form button{
     font-weight:bold;
     font-size:.7em;
 
-    box-shadow:0 2px 1px rgba(78, 160, 105, 0.322);
+    box-shadow:0 4px 1px rgba(78, 160, 105, 0.322);
+
+    outline:none;
 }
 
 footer p{

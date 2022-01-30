@@ -24,9 +24,12 @@ function MyForm() {
   }, /*#__PURE__*/React.createElement("input", {
     type: "text",
     id: "firstName",
+    className: "inp",
     autoComplete: "off",
     placeholder: "First Name",
     required: true
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "sinalization"
   }), /*#__PURE__*/React.createElement("span", {
     className: "spanError"
   })), /*#__PURE__*/React.createElement("div", {
@@ -34,9 +37,12 @@ function MyForm() {
   }, /*#__PURE__*/React.createElement("input", {
     type: "text",
     id: "lastName",
+    className: "inp",
     autoComplete: "off",
     placeholder: "Last Name",
     required: true
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "sinalization"
   }), /*#__PURE__*/React.createElement("span", {
     className: "spanError"
   })), /*#__PURE__*/React.createElement("div", {
@@ -44,9 +50,12 @@ function MyForm() {
   }, /*#__PURE__*/React.createElement("input", {
     type: "email",
     id: "email",
+    className: "inp",
     autoComplete: "off",
     placeholder: "Email Address",
     required: true
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "sinalization"
   }), /*#__PURE__*/React.createElement("span", {
     className: "spanError"
   })), /*#__PURE__*/React.createElement("div", {
@@ -54,9 +63,12 @@ function MyForm() {
   }, /*#__PURE__*/React.createElement("input", {
     type: "password",
     id: "password",
+    className: "inp",
     autoComplete: "off",
     placeholder: "Password",
     required: true
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "sinalization"
   }), /*#__PURE__*/React.createElement("span", {
     className: "spanError"
   })), /*#__PURE__*/React.createElement("button", {

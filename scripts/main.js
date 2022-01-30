@@ -48,31 +48,69 @@ function messagesCustomForTypeError(field, typeError) {
     return messages[field.type][field.id][typeError]
 }
 
+function sinalizationStyle(sinalization) {
+    const state = {
+        aparent() {
+            sinalization.style.width = "25px"
+            sinalization.style.height = "24px"
+        },
+        none() {
+            sinalization.style.width = "0"
+            sinalization.style.height = "0"
+        }
+        
+    }
+    
+    return state
+}
+
 
 function validity(event) {
     const field = event.target
     const error = validityField(field)
 
-    const spanError = field.parentNode.querySelector(".spanError")
+    const divInput = field.parentNode
+
+    const spanError = divInput.querySelector(".spanError")
+    const sinalization = divInput.querySelector(".sinalization")
+
+    const setStyleSinalization = sinalizationStyle(sinalization)
+
     if(error) {
+        setStyleSinalization.aparent()
+        divInput.style.borderColor = "red"
+        field.placeholder = ""
+        
         spanError.classList.add("error")
         spanError.innerText = messagesCustomForTypeError(field, error)
     }else {
+        divInput.style.borderColor = "gray"
+        setStyleSinalization.none()
+
         spanError.classList.remove("error")
         spanError.innerText = ""
     }
+}
+
+function changeBorderFocusInput(event) {
+    const fieldFather = event.target.parentNode
+    fieldFather.style.borderColor = "blue"
+}
+
+
+const inputs = document.querySelectorAll('.inp')
+
+for(let input of inputs) {
+    input.addEventListener('focus',changeBorderFocusInput)
 }
 
 
 
 
 
-
-
-
-
 const form = document.querySelector('#myForm')
+
 form.addEventListener("submit", event => {
     event.preventDefault()
-    console.log("Formulário enviado")
+    alert("Form send with sucessfully, thanks for registering")
 })

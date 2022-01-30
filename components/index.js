@@ -36,28 +36,32 @@ function MyForm() {
 
             <div className="inp-form">
 
-                <input type="text" id="firstName" autoComplete="off" placeholder="First Name" required/>
+                <input type="text" id="firstName" className="inp"autoComplete="off" placeholder="First Name" required/>
+                <span className="sinalization"></span>
                 <span className="spanError"></span>
 
             </div>
 
             <div  className="inp-form">
 
-                <input type="text" id="lastName" autoComplete="off" placeholder="Last Name" required/>
+                <input type="text" id="lastName" className="inp" autoComplete="off" placeholder="Last Name" required/>
+                <span className="sinalization"></span>
                 <span className="spanError"></span>
 
             </div>
 
             <div className="inp-form">
 
-                <input type="email" id="email"  autoComplete="off" placeholder="Email Address" required/>
+                <input type="email" id="email"  className="inp"autoComplete="off" placeholder="Email Address" required/>
+                <span className="sinalization"></span>
                 <span className="spanError"></span>
 
             </div>
 
             <div className="inp-form">
 
-                <input type="password" id="password"  autoComplete="off" placeholder="Password" required/>
+                <input type="password" id="password"  className="inp" autoComplete="off" placeholder="Password" required/>
+                <span className="sinalization"></span>
                 <span className="spanError"></span>
 
             </div>
